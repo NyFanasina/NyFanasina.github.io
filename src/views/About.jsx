@@ -1,5 +1,7 @@
-import { BiLogoTypescript, BiLogoJavascript, BiLogoReact, BiLogoVuejs, BiLogoTailwindCss, BiLogoBootstrap, BiLogoNodejs, BiLogoPhp } from "react-icons/bi"
-import { SiExpress, SiLaravel } from "react-icons/si";
+import {
+    BiLogoTypescript, BiLogoJavascript, BiLogoReact, BiLogoVuejs, BiLogoTailwindCss, BiLogoBootstrap, BiLogoNodejs, BiLogoPhp, BiLogoGit, BiLogoGithub,
+} from "react-icons/bi"
+import { SiExpress, SiLaravel, SiInsomnia } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
 import { FaLaravel } from "react-icons/fa";
 import { TbBrandReactNative } from "react-icons/tb";
@@ -14,7 +16,7 @@ export default function About() {
                 </p>
                 <p>J'ai une passion pour la création de solutions innovantes et performantes, et j'excelle particulièrement dans les environnements JavaScript et PHP.</p>
             </div>
-            <div className="py-10 flex justify-around *:*:flex *:*:justify-center *:*:items-center *:*:space-x-2">
+            <div className="py-10 flex justify-around *:min-w-[400px]  flex-wrap *:*:flex *:*:justify-center *:*:items-center *:*:space-x-2">
                 <div>
                     <h3>Languages de programations</h3>
                     <div>
@@ -27,20 +29,28 @@ export default function About() {
                     <h3>Frameworks et Librairies</h3>
                     <div>
                         <BiLogoReact color="#61d9ee" size={49} title="Reactjs" />
-                        <TbBrandReactNative color="#4c76af" size={46} title="ReactNative" />
+                        <TbBrandReactNative color="#4c76af" size={45} title="ReactNative" />
                         {/* <RiNextjsFill size={49} color="#eeeeee" title="NextJs" /> */}
-                        <SiExpress color="#eeeeee" size={49} title="Expressjs" />
-                        <SiLaravel color="red" size={42} title="Laravel" />
+                        <SiExpress color="#eeeeee" size={51} title="Expressjs" />
+                        <SiLaravel color="red" size={38} title="Laravel" />
                     </div>
                 </div>
                 <div>
-                    <h3>Framework Css</h3>
+                    <h3>Frameworks Css</h3>
                     <div>
                         <BiLogoTailwindCss color="#05b0ce" size={49} title="Tailwind ui" />
-                        <BiLogoBootstrap color="#613f8e" colo size={49} title="Bootstrap" />
+                        <BiLogoBootstrap color="#613f8e" size={49} title="Bootstrap" />
                     </div>
                 </div>
+            </div>
 
+            <div className="mt-5">
+                <h3>Outils</h3>
+                <div className="flex justify-center">
+                    <BiLogoGit color="#fe2521" size={49} />
+                    <BiLogoGithub size={49} />
+                    <SiInsomnia color="blue" size={46} />
+                </div>
             </div>
         </div>
     )

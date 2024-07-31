@@ -10,11 +10,11 @@ export const projects = [
     },
     {
         title: "Site web official du WhyNotLinux",
-        content: "Un site qui fournit les programmes et activité du WNL\n Lien: https://github.com/WhyNotLinuxMG/whynotlinuxmg.github.io",
+        content: "Un site qui fournit les programmes et activité du WNL\n Lien: https://github.com/WhyNotLinuxMG/whynotlinuxmg",
         image: wnl
     },
     {
-        title: "Module de Gestion caisse pour dolibarr",
+        title: "Module de Gestion de caisse",
         content: "Le module permet de suivre toutes les transactions au niveau de la caisse: brouillard de caisse,,dépot,retrait, historique de transaction.",
         image: dolibarr
     }
