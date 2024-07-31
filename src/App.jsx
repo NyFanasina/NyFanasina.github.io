@@ -11,15 +11,15 @@ import Footer from './components/Footer'
 function App() {
   return (
     <div className='bg-slate-950 text-slate-100'>
-      <div className='container mx-auto'>
-        <Header />
+      <Header />
+      <main className='container mx-auto'>
         <Home />
         <About />
         <Projects />
         <Contact />
         <Cv />
-        <Footer />
-      </div>
+      </main>
+      <Footer />
     </div>
   )
 }
