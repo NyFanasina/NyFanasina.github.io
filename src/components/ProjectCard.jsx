@@ -5,7 +5,7 @@ export function ProjectCard({ project }) {
         <Card
             className="max-w-md bg-gray-100 overflow-hidden"
             imgAlt="Meaningful alt text for an image that is not purely decorative"
-            renderImage={() => <img srcSet={project.image} className="h-[255px] border-b-2" />}
+            renderImage={() => <img srcSet={project.image} className="border-b-2" />}
         >
             <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                 {project.title}
