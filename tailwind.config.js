@@ -9,7 +9,12 @@ export default {
   ],
   theme: {
     extend: {
-    },
+      fontFamily: {
+        kontes: ['DMMono', 'sans-serif'],
+        Lato: ['Lato', 'sans-serif'],
+        Raleway: ['Raleway']
+      }
+    }
   },
   plugins: [
     flowbite.plugin(),

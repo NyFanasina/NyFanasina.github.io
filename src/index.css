@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-.card_project {
-    @apply flex justify-center items-center space-x-2
+@font-face {
+    font-family: "DMMono";
+    src: url('./assets/fonts/DMMono-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Lora";
+    src: url('./assets/fonts/Lora.ttf');
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url('./assets/fonts/Raleway.ttf');
 }

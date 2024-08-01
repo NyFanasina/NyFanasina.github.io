@@ -3,7 +3,7 @@ import { projects } from "../utils/projects";
 
 export default function Projects() {
     return (
-        <div className="py-5" id="projects">
+        <div className="py-12" id="projects">
             <h1 className="text-center p-5 text-3xl">Quelques extraits de mes projets</h1>
             <div className="flex justify-around flex-wrap gap-5 ">
                 {
