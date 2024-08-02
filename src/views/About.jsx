@@ -15,7 +15,7 @@ export default function About() {
                 <p>
                     Moi, c'est Ny Fanasina,  étudiant en informatique et développeur logiciel spécialisé dans le développement web et mobile.
                 </p>
-                <p>J'ai une passion pour la création de solutions innovantes et performantes, et j'excelle particulièrement dans les environnements JavaScript et PHP.</p>
+                <p>J'ai une passion pour la création des solutions innovantes et performantes, et j'excelle particulièrement dans les environnements JavaScript et PHP.</p>
             </div>
             <div className="py-10 justify-around flex-wrap">
                 <TechItemAbout title="Langages de programmation">
