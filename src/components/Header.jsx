@@ -5,6 +5,7 @@ export default function Header() {
                 <li><a href="#home">Accueil</a></li>
                 <li><a href="#about">À propos</a></li>
                 <li><a href="#projects">Projets</a></li>
+                <li><a href="#cv">Mon CV</a></li>
                 <li><a href="#contact">Contacts</a></li>
             </ul>
         </div>
