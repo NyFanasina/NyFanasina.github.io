@@ -6,7 +6,7 @@ export default function Contact() {
         <div id="contact" className="py-8">
             <h1 className="text-center text-3xl">Mes Contacts </h1>
             <div>
-                <div className="flex md:flex-row flex-col justify-evenly flex-wrap space-x-2 space-y-4 *:flex *:justify-center *:items-center *:*:mx-1 py-12">
+                <div className="flex lg:flex-row flex-col justify-around flex-wrap space-x-2 space-y-4 *:flex *:items-end *:flex-1 *:justify-center py-12">
                     <div>
                         <IoLogoGithub size={22} />
                         <a href="https://github.com/NyFanasina">Github: https://github.com/NyFanasina</a>
