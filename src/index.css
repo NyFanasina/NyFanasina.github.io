@@ -16,3 +16,10 @@
     font-family: "Raleway";
     src: url('./assets/fonts/Raleway.ttf');
 }
+
+.gradient {
+    background: -webkit-linear-gradient(140deg, #020617, #020632);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(140deg, #020617, #020632);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}

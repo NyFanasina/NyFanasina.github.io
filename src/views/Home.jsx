@@ -9,7 +9,7 @@ export default function Home() {
     return (
         <div id="home">
             <div className="flex items-center flex-wrap justify-around h-[90vh]">
-                <div className='bg-indigo-950 border-4 rounded-full md:w-[400px] md:h-[400px] h-[280px] w-[280px] overflow-hidden'>
+                <div className='bg-indigo-950 border-4 p-1 rounded-full md:w-[400px] md:h-[400px] h-[280px] w-[280px] overflow-hidden'>
                     <img src={me} className='mt-4 ms' />
                 </div>
                 <p className='flex flex-col justify-between px-5 space-y-5 max-[1534px]:text-center'>

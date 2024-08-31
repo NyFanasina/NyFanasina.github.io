@@ -10,7 +10,7 @@ import Footer from './components/Footer'
 
 function App() {
   return (
-    <div className='bg-slate-950 text-slate-100 font-Raleway'>
+    <div className='gradient text-slate-100 font-Raleway'>
       <Header />
       <main className='container mx-auto'>
         <Home />
