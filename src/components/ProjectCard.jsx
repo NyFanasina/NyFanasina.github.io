@@ -1,6 +1,11 @@
 import { Card } from "flowbite-react";
+import CardButton from "./CardButton";
 
 export function ProjectCard({ project }) {
+    const buttons = project.technos && project.technos.map((techno, i) => (
+        <CardButton key={i}>{techno}</CardButton>)
+    )
+
     return (
         <Card
             className="max-w-md bg-gray-100 overflow-hidden"
@@ -13,6 +18,7 @@ export function ProjectCard({ project }) {
             <p className="font-normal text-gray-700 dark:text-gray-400">
                 {project.content}
             </p>
+            <p>{buttons}</p>
         </Card>
     );
 }
