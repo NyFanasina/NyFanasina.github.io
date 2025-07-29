@@ -1,18 +1,16 @@
-import { Button, TextInput } from 'flowbite-react'
-import { useState } from 'react'
-import Header from './components/Header'
-import Home from './views/Home'
-import Projects from './views/Projects'
-import Contact from './views/Contact'
-import About from './views/About'
-import Cv from './views/Cv'
-import Footer from './components/Footer'
+import Header from "./components/Header";
+import Home from "./views/Home";
+import Projects from "./views/Projects";
+import Contact from "./views/Contact";
+import About from "./views/About";
+import Cv from "./views/Cv";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className='gradient text-slate-100 font-Raleway'>
+    <div className="gradient text-slate-100 font-Raleway">
       <Header />
-      <main className='container mx-auto'>
+      <main className="container mx-auto px-4">
         <Home />
         <About />
         <Projects />
@@ -21,7 +19,7 @@ function App() {
       </main>
       <Footer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -1,29 +1,132 @@
-import { Button, Flowbite, TextInput, Textarea } from "flowbite-react";
-import { IoMail, IoCall, IoLogoGithub } from "react-icons/io5";
+import { BiMessageSquareCheck } from "react-icons/bi";
+import { MdLocationOn } from "react-icons/md";
+import { ImPhone } from "react-icons/im";
+import { MdEmail } from "react-icons/md";
+import { IoLogoGithub } from "react-icons/io5";
+import { Alert, Button } from "flowbite-react"; // ajuste si ton Button vient d'ailleurs
+import { FaGitlab } from "react-icons/fa";
+import AddressCard from "../components/AddressCard";
+import emailjs from "@emailjs/browser";
+import { useState } from "react";
+import { service_id, template_id } from "../config/email";
+import { HiInformationCircle } from "react-icons/hi";
+
+const initialForm = {
+  name: "",
+  email: "",
+  message: "",
+};
 
 export default function Contact() {
+  const [isSent, setSent] = useState(false);
+  const [hasError, setHasError] = useState(false);
+  const [pending, setPending] = useState(false);
+  const [form, setForm] = useState(initialForm);
+
+  async function handleSubmit(e) {
+    e.preventDefault();
+    setPending(true);
+
+    await emailjs
+      .send(service_id, template_id, form)
+      .then(({ status }) => {
+        if (status === 200) setSent(true);
+      })
+      .catch(() => {
+        setHasError(true);
+      });
+
+    setPending(false);
+  }
+
+  function handleInput(e) {
+    const target = e.target;
+    setForm({ ...form, [target.name]: target.value });
+  }
+
   return (
-    <div id="contact" className="py-8">
-      <h1 className="text-center text-3xl">Mes Contacts </h1>
-      <div>
-        <div className="flex lg:flex-row flex-col justify-around flex-wrap space-x-2 space-y-4 *:flex *:items-end *:flex-1 *:justify-center py-12">
-          <div>
-            <IoLogoGithub size={22} />
-            <a href="https://github.com/NyFanasina">Github: https://github.com/NyFanasina</a>
-          </div>
-          <div>
-            <IoMail size={22} />
-            <span>Email: Fjaonasitera@gmail.com</span>
-          </div>
-          <div>
-            <IoCall size={22} />
-            <span>Tel: +261 32 35 786 19</span>
-          </div>
+    <section id="contact" className="py-16 text-white">
+      <h2 className="text-3xl font-bold text-center mb-12">📬 Me Contacter</h2>
+
+      <form
+        onSubmit={handleSubmit}
+        encType="text/plain"
+        className="max-w-xl mx-auto bg-white/10 backdrop-blur-sm border border-white/10 p-6 rounded-2xl shadow-lg text-white"
+      >
+        <h2 className="text-2xl font-bold mb-6 text-center">💬 M'envoyer un message</h2>
+
+        <div className="mb-4">
+          <label className="block mb-1 text-sm">Nom</label>
+          <input
+            type="text"
+            name="name"
+            onChange={handleInput}
+            value={form.name}
+            required
+            className="w-full px-4 py-2 rounded bg-gray-800 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-cyan-500"
+          />
         </div>
-        <Button href="mailto:Fjaonasitera@gmail.com" className="mx-auto my-7 w-[200px] ">
-          M'envoyer un email
-        </Button>
+
+        <div className="mb-4">
+          <label className="block mb-1 text-sm">Email</label>
+          <input
+            type="email"
+            name="email"
+            value={form.email}
+            onChange={handleInput}
+            required
+            className="w-full px-4 py-2 rounded bg-gray-800 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-cyan-500"
+          />
+        </div>
+
+        <div className="mb-4">
+          <label className="block mb-1 text-sm">Message</label>
+          <textarea
+            name="message"
+            value={form.message}
+            rows="5"
+            onChange={handleInput}
+            required
+            className="w-full px-4 py-2 rounded bg-gray-800 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-cyan-500 resize-none"
+          ></textarea>
+        </div>
+        {hasError && (
+          <Alert color="failure" icon={HiInformationCircle} className="py-2.5 mb-3">
+            <>Une erreur s'est produite.</> Merci de me contacter à l'adresse email <strong>fjaonasitera@gmail.com</strong>.
+          </Alert>
+        )}
+        <div className="*:mx-auto">
+          {isSent && (
+            <Button className="flex items-center" color="success">
+              <span className="me-1"> Merci, votre message a bien été envoyé</span>
+              <BiMessageSquareCheck size={22} />
+            </Button>
+          )}
+          {!isSent && !hasError && (
+            <Button type="submit" className="px-6" isProcessing={pending} disabled={pending}>
+              {pending ? "En cours d'envoie" : "Envoyer"}
+            </Button>
+          )}
+        </div>
+      </form>
+
+      <div className="flex justify-between items-center flex-wrap gap-y-5 mt-8">
+        <div className="*:mt-1.5">
+          <AddressCard Icon={MdLocationOn} value="Madagascar" />
+          <AddressCard Icon={ImPhone} value="+261 32 35 786 19" />
+          <AddressCard Icon={MdEmail} value="fjaonasitera@gmail.com" />
+        </div>
+
+        <div className="flex space-x-3">
+          <a href="https://github.com/NyFanasina" target="_blank" rel="noopener noreferrer" className="text-sm hover:underline">
+            <IoLogoGithub size={52} />
+          </a>
+
+          <a href="https://gitlab.com/NyFanasina" target="_blank" rel="noopener noreferrer" className="text-sm hover:underline">
+            <FaGitlab size={52} />
+          </a>
+        </div>
       </div>
-    </div>
+    </section>
   );
 }

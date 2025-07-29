@@ -10,7 +10,7 @@ export default function Cv() {
     a.click();
   }
   return (
-    <div className="py-5 px-2" id="cv">
+    <div className="py-5" id="cv">
       <h1 className="text-center text-3xl p-5">Mon Curriculum Vitae - (CV)</h1>
       <div className="flex flex-col items-center gap-5">
         <a href={cv}>
