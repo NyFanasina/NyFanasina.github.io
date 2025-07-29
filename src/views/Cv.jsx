@@ -1,14 +1,8 @@
 import { Button } from "flowbite-react";
 import cv from "../assets/cv.png";
-import cvPdf from "../assets/CV_Ny_Fanasina_Jaonasitera.pdf";
+import { handleDownloadCV } from "../utils";
 
 export default function Cv() {
-  function handleDownload() {
-    const a = document.createElement("a");
-    a.href = cvPdf;
-    a.download = true;
-    a.click();
-  }
   return (
     <div className="py-5" id="cv">
       <h1 className="text-center text-3xl p-5">Mon Curriculum Vitae - (CV)</h1>
@@ -16,7 +10,7 @@ export default function Cv() {
         <a href={cv}>
           <img src={cv} alt="capture du cv" width={480} className="rounded-sm" />
         </a>
-        <Button onClick={handleDownload}>Télécharger le CV (.pdf)</Button>
+        <Button onClick={handleDownloadCV}>Télécharger le CV (.pdf)</Button>
       </div>
     </div>
   );

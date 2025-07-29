@@ -60,6 +60,7 @@ export default function Contact() {
           <input
             type="text"
             name="name"
+            minLength={2}
             onChange={handleInput}
             value={form.name}
             required
@@ -84,6 +85,7 @@ export default function Contact() {
           <textarea
             name="message"
             value={form.message}
+            minLength={20}
             rows="5"
             onChange={handleInput}
             required
