@@ -1,5 +1,5 @@
 import { Button } from "flowbite-react";
-import cv from "../assets/cv.png";
+import cv from "../assets/CV.jpg";
 import { handleDownloadCV } from "../utils";
 
 export default function Cv() {
