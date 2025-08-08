@@ -19,8 +19,8 @@ export default function About() {
     { icon: <SiRedux size={50} />, label: "Redux" },
     { icon: <GiBearFace size={50} />, label: "Zustand" },
     {
-      icon: <GiPalmTree size={50} />,
-      label: "Tanstack",
+      icon: <GiPalmTree size={50} className="ms-3" />,
+      label: `Tanstack`,
     },
     { icon: <SiTypeorm size={50} />, label: "TypeORM" },
     // { icon: <SiPrisma size={50} />, label: "Prisma" },
