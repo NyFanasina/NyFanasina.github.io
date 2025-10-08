@@ -94,7 +94,10 @@ export default function Contact() {
         </div>
         {hasError && (
           <Alert color="failure" icon={HiInformationCircle} className="py-2.5 mb-3">
-            <>Une erreur s'est produite.</> Merci de me contacter à l'adresse email <strong>fjaonasitera@gmail.com</strong>.
+            <>Une erreur s'est produite.</> Merci de me contacter à l'adresse email &nbsp;
+            <strong>
+              <a href="mailto:fjaonasitera@gmail.com">fjaonasitera@gmail.com</a>.
+            </strong>
           </Alert>
         )}
         <div className="*:mx-auto">

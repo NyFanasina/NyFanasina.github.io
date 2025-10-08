@@ -1,6 +1,6 @@
-import { FaReact, FaGitAlt, FaPhp, FaLaravel, FaMobileAlt, FaBootstrap, FaDocker, FaNodeJs, FaGithub, FaGitlab } from "react-icons/fa";
+import { FaReact, FaGitAlt, FaPhp, FaLaravel, FaMobileAlt, FaBootstrap, FaDocker, FaNodeJs, FaGithub, FaGitlab, FaPython } from "react-icons/fa";
 import { GiBearFace, GiPalmTree } from "react-icons/gi";
-import { SiTailwindcss, SiTypescript, SiNextdotjs, SiExpress, SiTypeorm, SiRadixui, SiPrisma, SiRedux } from "react-icons/si";
+import { SiTailwindcss, SiTypescript, SiNextdotjs, SiExpress, SiTypeorm, SiRadixui, SiPrisma, SiRedux, SiOdoo } from "react-icons/si";
 
 export default function About() {
   const skills = [
@@ -10,12 +10,13 @@ export default function About() {
     { icon: <SiNextdotjs size={50} />, label: "Next.js" },
     { icon: <FaMobileAlt size={50} />, label: "React Native" },
     { icon: <SiTailwindcss size={50} />, label: "Tailwind CSS" },
-    { icon: <FaBootstrap size={50} />, label: "Bootstrap" },
+    { icon: <FaPython size={50} />, label: "Python" },
+    { icon: <SiOdoo size={58} />, label: "Odoo" },
     // { icon: <SiRadixui size={50} />, label: "shadcn/ui" },
     { icon: <FaPhp size={50} />, label: "PHP" },
     { icon: <FaLaravel size={50} />, label: "Laravel" },
     { icon: <FaNodeJs size={50} />, label: "Node.js" },
-    { icon: <SiExpress size={50} />, label: "Express.js" },
+    // { icon: <SiExpress size={50} />, label: "Express.js" },
     { icon: <SiRedux size={50} />, label: "Redux" },
     { icon: <GiBearFace size={50} />, label: "Zustand" },
     {
@@ -39,6 +40,7 @@ export default function About() {
           J'ai une passion pour la création des solutions innovantes et performantes, et j'excelle particulièrement dans les environnements
           JavaScript et PHP.
         </p>
+        <p>J’explore actuellement l’univers Odoo afin de créer des modules sur mesure en Python.</p>
       </div>
 
       <div className="grid grid-cols-3 min-[480px]:grid-cols-4 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-6 xl:grid-cols-9 gap-6 place-items-center mt-20">
