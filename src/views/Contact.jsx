@@ -118,7 +118,7 @@ export default function Contact() {
       <div className="flex justify-between items-center flex-wrap gap-y-5 mt-8">
         <div className="*:mt-1.5">
           <AddressCard Icon={MdLocationOn} value="Madagascar" />
-          <AddressCard Icon={ImPhone} value="+261 32 35 786 19" />
+          <AddressCard Icon={ImPhone} value="+261 38 51 798 08" />
           <AddressCard Icon={MdEmail} value="fjaonasitera@gmail.com" />
         </div>
 

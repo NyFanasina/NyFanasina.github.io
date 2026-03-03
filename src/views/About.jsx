@@ -1,49 +1,60 @@
 import { FaReact, FaGitAlt, FaPhp, FaLaravel, FaMobileAlt, FaBootstrap, FaDocker, FaNodeJs, FaGithub, FaGitlab, FaPython } from "react-icons/fa";
 import { GiBearFace, GiPalmTree } from "react-icons/gi";
-import { SiTailwindcss, SiTypescript, SiNextdotjs, SiExpress, SiTypeorm, SiRadixui, SiPrisma, SiRedux, SiOdoo } from "react-icons/si";
+import {
+  SiTailwindcss,
+  SiTypescript,
+  SiNextdotjs,
+  SiExpress,
+  SiTypeorm,
+  SiRadixui,
+  SiPrisma,
+  SiRedux,
+  SiOdoo,
+  SiZod,
+  SiExpo,
+} from "react-icons/si";
 
 export default function About() {
   const skills = [
-    // { icon: <FaJsSquare size={50} />, label: "JavaScript" },
-    { icon: <SiTypescript size={50} />, label: "TypeScript" },
-    { icon: <FaReact size={50} />, label: "React.js" },
-    { icon: <SiNextdotjs size={50} />, label: "Next.js" },
-    { icon: <FaMobileAlt size={50} />, label: "React Native" },
-    { icon: <SiTailwindcss size={50} />, label: "Tailwind CSS" },
-    { icon: <FaPython size={50} />, label: "Python" },
-    { icon: <SiOdoo size={58} />, label: "Odoo" },
-    // { icon: <SiRadixui size={50} />, label: "shadcn/ui" },
-    { icon: <FaPhp size={50} />, label: "PHP" },
-    { icon: <FaLaravel size={50} />, label: "Laravel" },
-    { icon: <FaNodeJs size={50} />, label: "Node.js" },
-    // { icon: <SiExpress size={50} />, label: "Express.js" },
-    { icon: <SiRedux size={50} />, label: "Redux" },
-    { icon: <GiBearFace size={50} />, label: "Zustand" },
+    // { icon: <FaJsSquare size={40} />, label: "JavaScript" },
+    { icon: <SiTypescript size={40} />, label: "TypeScript" },
+    { icon: <FaReact size={40} />, label: "React.js" },
+    { icon: <SiNextdotjs size={40} />, label: "Next.js" },
+    { icon: <FaMobileAlt size={40} />, label: "React Native" },
+    { icon: <SiExpo size={40} />, label: "Expo" },
+    // { icon: <SiRadixui size={40} />, label: "shadcn/ui" },
+    { icon: <FaPhp size={40} />, label: "PHP" },
+    { icon: <FaLaravel size={40} />, label: "Laravel" },
+    { icon: <FaNodeJs size={40} />, label: "Node.js" },
+    { icon: <SiExpress size={40} />, label: "Express.js" },
+    { icon: <SiTailwindcss size={40} />, label: "Tailwind CSS" },
+    { icon: <SiRedux size={40} />, label: "Redux" },
+    { icon: <GiBearFace size={40} />, label: "Zustand" },
     {
-      icon: <GiPalmTree size={50} className="ms-3" />,
+      icon: <GiPalmTree size={40} className="ms-3" />,
       label: `Tanstack`,
     },
-    { icon: <SiTypeorm size={50} />, label: "TypeORM" },
-    // { icon: <SiPrisma size={50} />, label: "Prisma" },
-    { icon: <FaGitAlt size={50} />, label: "Git" },
-    { icon: <FaGithub size={50} />, label: "GitHub" },
-    { icon: <FaGitlab size={50} />, label: "GitLab" },
-    { icon: <FaDocker size={50} />, label: "Docker" },
+    { icon: <SiTypeorm size={40} />, label: "TypeORM" },
+    { icon: <SiPrisma size={40} />, label: "Prisma" },
+    { icon: <SiZod size={40} />, label: "Zod" },
+    { icon: <FaGitAlt size={40} />, label: "Git" },
+    // { icon: <FaGithub size={40} />, label: "GitHub" },
+    // { icon: <FaGitlab size={40} />, label: "GitLab" },
+    { icon: <FaDocker size={40} />, label: "Docker" },
   ];
 
   return (
     <div className="sm:py-20 py-10 text-center mt-5" id="about">
       <div>
         <h1 className="text-3xl p-2">Je me présente,</h1>
-        <p>Moi, c'est Ny Fanasina, étudiant en Master informatique et développeur logiciel spécialisé dans le développement web et mobile.</p>
+        <p>Moi, c'est Ny Fanasina, développeur logiciel spécialisé dans le web et mobile.</p>
         <p>
-          J'ai une passion pour la création des solutions innovantes et performantes, et j'excelle particulièrement dans les environnements
-          JavaScript et PHP.
+          J’ accompagne les entreprises et professionnels à créer ensemble des solutions numériques efficaces et performantes, en mettant
+          l’accent sur l’expérience utilisateur et la qualité du code. J' excelle particulièrement dans les environnements JavaScript et PHP.
         </p>
-        <p>J’explore actuellement l’univers Odoo afin de créer des modules sur mesure en Python.</p>
       </div>
 
-      <div className="grid grid-cols-3 min-[480px]:grid-cols-4 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-6 xl:grid-cols-9 gap-6 place-items-center mt-20">
+      <div className="max-w-[1300px] mx-auto grid grid-cols-3 min-[480px]:grid-cols-4 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-6 xl:grid-cols-9 gap-6 place-items-center mt-20">
         {skills.map(({ icon, label }, index) => (
           <div
             key={index}
