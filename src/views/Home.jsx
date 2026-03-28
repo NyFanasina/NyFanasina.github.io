@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div id="home">
       <div className="flex items-center flex-wrap justify-around h-[90vh] min-h-min">
-        <div className="bg-[#607d8b] border-[8px] max-sm:my-6 my-4 rounded-full md:w-[400px] md:h-[400px] h-[280px] w-[280px] overflow-hidden">
+        <div className="bg-[#607d8b] border-[8px] max-sm:my-6 my-4 rounded-full md:w-[380px] md:h-[380px] h-[280px] w-[280px] overflow-hidden">
           <img src={me} />
         </div>
         <div className="flex flex-col justify-between space-y-5 max-[1534px]:text-center">
@@ -21,7 +21,7 @@ export default function Home() {
           <p className="flex *:flex-1 gap-1.5 flex-wrap *:min-w-52">
             <Button onClick={handleClick}>Contacter-moi</Button>
             <Button onClick={handleDownloadCV}>
-              <span className="me-1">Télecharger mon CV</span> <FaDownload />
+              <span className="me-1">Télecharger mon CV</span> <FaDownload className="animate-bounce"/>
             </Button>
           </p>
         </div>

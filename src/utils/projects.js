@@ -1,4 +1,4 @@
-import twoBla from "../assets/2BLA.png";
+import bible from "../assets/bible_mg.png";
 import wnl from "../assets/wnl.png";
 import dolibarr from "../assets/dolibarr.png";
 import mzk from "../assets/mzk.png";
@@ -18,10 +18,10 @@ export const projects = [
     technos: ["React.js", "Tailwind CSS"],
   },
   {
-    title: "2Bla : Mini-reseau-sociaux (Projet personnel)",
-    content: "Une application mobile offrant aux utilisateurs un espace d’échange où ils peuvent publier, aimer, commenter et discuter en messagerie privée.",
-    image: twoBla,
-    technos: ["React Native", "TypeScript", "Express.js", "PostgreSQL"],
+    title: "Baiboly Mg 1865 (Projet personnel)",
+    content: "Une application mobile multiplateforme (Android & iOS) dédiée à la lecture de la Bible en malgache. Elle intègre une recherche rapide par référence (ex: Mat 7:7), un assistant IA pour l'explication des versets, ainsi que des fonctionnalités de favoris et de partage.",
+    image: bible,
+    technos: ["Expo", "React Native", "Google Gemini API", "Nativewind", "Zustand"],
   },
   {
     title: "Module de Gestion de caisse",
