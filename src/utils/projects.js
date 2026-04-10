@@ -13,14 +13,33 @@ export const projects = [
   },
   {
     title: "Site web officiel de WhyNotLinux",
-    content: "Un site web dédié à la diffusion des programmes et activités de WNL. \nLien: https://github.com/WhyNotLinuxMG/whynotlinuxmg",
+    content:
+      "Why Not Linux – 2ᵉ édition est un site web événementiel dédié à un événement communautaire autour de Linux et de l’open source à Madagascar. J’ai contribué à son développement pour présenter l’événement et promouvoir les logiciels libres.",
     image: wnl,
+    links: [
+      {
+        name: "View on GitHub",
+        url: "https://github.com/NyFanasina/whynotlinuxmg.github.io",
+      },
+    ],
     technos: ["React.js", "Tailwind CSS"],
   },
   {
     title: "Baiboly Mg 1865 (Projet personnel)",
-    content: "Une application mobile multiplateforme (Android & iOS) dédiée à la lecture de la Bible en malgache. Elle intègre une recherche rapide par référence (ex: Mat 7:7), un assistant IA pour l'explication des versets, ainsi que des fonctionnalités de favoris et de partage.",
+    content:
+      "Une application mobile multiplateforme (Android & iOS) dédiée à la lecture de la Bible en malgache. Elle intègre une recherche rapide par référence (ex: Mat 7:7), un assistant IA pour l'explication des versets, ainsi que des fonctionnalités de favoris et de partage.",
     image: bible,
+    links: [
+      {
+        name: "View preview",
+        url: "https://expo.dev/accounts/nyfanasina/projects/bible-malagasy-1865/builds/7722527d-921f-41c5-9f58-da881fbcc95f",
+      },
+      {
+        name: "View on GitHub",
+        url: "https://github.com/NyFanasina/bible-mg-1865",
+      },
+    ],
+
     technos: ["Expo", "React Native", "Google Gemini API", "Nativewind", "Zustand"],
   },
   {
