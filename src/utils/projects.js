@@ -12,9 +12,9 @@ export const projects = [
     technos: ["Next.js", "TypeScript", "Tailwind CSS", "SQL Server"],
   },
   {
-    title: "Site web officiel de WhyNotLinux",
+    title: "Site web de WhyNotLinux – 2ᵉ édition",
     content:
-      "Why Not Linux – 2ᵉ édition est un site web événementiel dédié à un événement communautaire autour de Linux et de l’open source à Madagascar. J’ai contribué à son développement pour présenter l’événement et promouvoir les logiciels libres.",
+      "C'est un site web événementiel autour de Linux et de l’open source à Madagascar. J’ai contribué à son développement pour présenter l’événement et promouvoir les logiciels libres.",
     image: wnl,
     links: [
       {
@@ -32,7 +32,7 @@ export const projects = [
     links: [
       {
         name: "View preview",
-        url: "https://expo.dev/accounts/nyfanasina/projects/bible-malagasy-1865/builds/7722527d-921f-41c5-9f58-da881fbcc95f",
+        url: "https://expo.dev/accounts/nyfanasina/projects/bible-malagasy-1865/builds/011c82fc-b5b1-4b46-8ca7-033720832423",
       },
       {
         name: "View on GitHub",
