@@ -46,8 +46,11 @@ export default function About() {
       <div>
         <h1 className="text-3xl p-2">Je me présente,</h1>
         <p>
-          Moi, c&apos;est Ny Fanasina, développeur logiciel spécialisé dans le web et mobile avec plus de 1 an
-          d&apos;expérience les écosystèmes JavaScript et Python.
+          Moi, c&apos;est Ny Fanasina,{" "}
+          <strong>
+            développeur logiciel spécialisé dans le web et le mobile, avec plus d&apos;un an d&apos;expérience
+          </strong>{" "}
+          dans les écosystèmes Python et Javascript.
         </p>
         <p>
           Je développe des logiciels avec une conviction simple : un bon produit commence par une architecture solide.
@@ -66,7 +69,7 @@ export default function About() {
               "w-[100px] h-[100px] min-[370px]:w-28 min-[370px]:h-28 flex flex-col items-center justify-center gap-3 \
               bg-white/10 backdrop-blur-sm border border-white/10 rounded-2xl text-white shadow-md \
               transition-all duration-300 hover:scale-105 hover:text-cyan-400 hover:shadow-[0_0_15px_#06b6d4]",
-              { [`max-[${COL3_WIDTH}px]:hidden`]: autoHide },
+              { "max-sm:hidden": autoHide },
             )}
           >
             <span className="text-2xl transition-transform duration-200 hover:scale-125">{icon}</span>
