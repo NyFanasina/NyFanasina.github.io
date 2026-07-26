@@ -53,7 +53,7 @@ export default function Contact() {
         encType="text/plain"
         className="max-w-xl mx-auto bg-white/10 backdrop-blur-sm border border-white/10 p-6 rounded-2xl shadow-lg text-white"
       >
-        <h2 className="text-2xl font-bold mb-6 text-center">💬 M'envoyer un message</h2>
+        <h2 className="text-2xl font-bold mb-6 text-center">💬 M&apos;envoyer un message</h2>
 
         <div className="mb-4">
           <label className="block mb-1 text-sm">Nom</label>
@@ -94,7 +94,7 @@ export default function Contact() {
         </div>
         {hasError && (
           <Alert color="failure" icon={HiInformationCircle} className="py-2.5 mb-3">
-            <>Une erreur s'est produite.</> Merci de me contacter à l'adresse email &nbsp;
+            <>Une erreur s&apos;est produite.</> Merci de me contacter à l&apos;adresse email &nbsp;
             <strong>
               <a href="mailto:fjaonasitera@gmail.com">fjaonasitera@gmail.com</a>.
             </strong>
@@ -119,16 +119,26 @@ export default function Contact() {
         <div className="*:mt-1.5">
           <AddressCard Icon={MdLocationOn} value="Madagascar" />
           <AddressCard Icon={ImPhone} value="+261 38 51 798 08" />
-          <AddressCard Icon={MdEmail} value="fjaonasitera@gmail.com" />
+          <AddressCard Icon={MdEmail} value="nyfanasinajaonasitera@gmail.com" />
         </div>
 
         <div className="flex space-x-3">
-          <a href="https://github.com/NyFanasina" target="_blank" rel="noopener noreferrer" className="text-sm hover:underline">
-            <IoLogoGithub size={52} />
+          <a
+            href="https://github.com/NyFanasina"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm hover:underline"
+          >
+            <IoLogoGithub size={50} />
           </a>
 
-          <a href="https://gitlab.com/NyFanasina" target="_blank" rel="noopener noreferrer" className="text-sm hover:underline">
-            <FaGitlab size={52} />
+          <a
+            href="https://gitlab.com/NyFanasina"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm hover:underline"
+          >
+            <FaGitlab size={50} />
           </a>
         </div>
       </div>
